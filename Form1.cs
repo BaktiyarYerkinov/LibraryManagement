@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace LibraryManagement
 {
@@ -33,11 +34,6 @@ namespace LibraryManagement
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
         {
 
         }
@@ -88,6 +84,45 @@ namespace LibraryManagement
             {
                 txtPassword.Clear();
                 txtPassword.PasswordChar = '#';
+            }
+        }
+
+        private void pictureBoxGitHub_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/BaktiyarYerkinov");
+        }
+
+        private void pictureBoxInsta_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/y__bahi/");
+        }
+
+        private void pictureBoxLinkedin_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.linkedin.com/in/baktiyar-yerkinov-9271ba226/");
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "data source=(local); database=master; integrated security=True";
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandText = "select * from loginTable where username='"+txtUsername.Text+"'and pass='"+txtPassword.Text+"' ";
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            
+            if(ds.Tables[0].Rows.Count != 0)
+            {
+                this.Hide();
+                Dashboard dsa = new Dashboard();
+                dsa.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Wrong Username OR Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -40,19 +40,19 @@ namespace LibraryManagement
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Login = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxGitHub = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLinkedin = new System.Windows.Forms.PictureBox();
+            this.pictureBoxInsta = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGitHub)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLinkedin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInsta)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -144,18 +144,19 @@ namespace LibraryManagement
             this.panel2.TabIndex = 9;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // Login
+            // btnLogin
             // 
-            this.Login.BackColor = System.Drawing.Color.Cyan;
-            this.Login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Login.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Login.Location = new System.Drawing.Point(103, 332);
-            this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(194, 33);
-            this.Login.TabIndex = 10;
-            this.Login.Text = "Login";
-            this.Login.UseVisualStyleBackColor = false;
+            this.btnLogin.BackColor = System.Drawing.Color.Cyan;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnLogin.Location = new System.Drawing.Point(103, 332);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(194, 33);
+            this.btnLogin.TabIndex = 10;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // button2
             // 
@@ -171,39 +172,41 @@ namespace LibraryManagement
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pictureBox4
+            // pictureBoxGitHub
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(72, 443);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(59, 43);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
+            this.pictureBoxGitHub.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.pictureBoxGitHub.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxGitHub.Image")));
+            this.pictureBoxGitHub.Location = new System.Drawing.Point(72, 443);
+            this.pictureBoxGitHub.Name = "pictureBoxGitHub";
+            this.pictureBoxGitHub.Size = new System.Drawing.Size(59, 43);
+            this.pictureBoxGitHub.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxGitHub.TabIndex = 12;
+            this.pictureBoxGitHub.TabStop = false;
+            this.pictureBoxGitHub.Click += new System.EventHandler(this.pictureBoxGitHub_Click);
             // 
-            // pictureBox6
+            // pictureBoxLinkedin
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(173, 443);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(59, 43);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 13;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.pictureBoxLinkedin.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.pictureBoxLinkedin.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLinkedin.Image")));
+            this.pictureBoxLinkedin.Location = new System.Drawing.Point(173, 443);
+            this.pictureBoxLinkedin.Name = "pictureBoxLinkedin";
+            this.pictureBoxLinkedin.Size = new System.Drawing.Size(59, 43);
+            this.pictureBoxLinkedin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLinkedin.TabIndex = 13;
+            this.pictureBoxLinkedin.TabStop = false;
+            this.pictureBoxLinkedin.Click += new System.EventHandler(this.pictureBoxLinkedin_Click);
             // 
-            // pictureBox7
+            // pictureBoxInsta
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.LightCyan;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(275, 443);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(59, 43);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 14;
-            this.pictureBox7.TabStop = false;
+            this.pictureBoxInsta.BackColor = System.Drawing.Color.LightCyan;
+            this.pictureBoxInsta.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxInsta.Image")));
+            this.pictureBoxInsta.Location = new System.Drawing.Point(275, 443);
+            this.pictureBoxInsta.Name = "pictureBoxInsta";
+            this.pictureBoxInsta.Size = new System.Drawing.Size(59, 43);
+            this.pictureBoxInsta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxInsta.TabIndex = 14;
+            this.pictureBoxInsta.TabStop = false;
+            this.pictureBoxInsta.Click += new System.EventHandler(this.pictureBoxInsta_Click);
             // 
             // btnClose
             // 
@@ -225,11 +228,11 @@ namespace LibraryManagement
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(400, 530);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBoxInsta);
+            this.Controls.Add(this.pictureBoxLinkedin);
+            this.Controls.Add(this.pictureBoxGitHub);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.Login);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox5);
@@ -247,9 +250,9 @@ namespace LibraryManagement
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGitHub)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLinkedin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInsta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,11 +273,11 @@ namespace LibraryManagement
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button Login;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBoxGitHub;
+        private System.Windows.Forms.PictureBox pictureBoxLinkedin;
+        private System.Windows.Forms.PictureBox pictureBoxInsta;
         private System.Windows.Forms.Button btnClose;
     }
 }
