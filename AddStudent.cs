@@ -77,5 +77,10 @@ namespace LibraryManagement
                 MessageBox.Show("Please Fill Empty Fields", "Suggest", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void txtSemester_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

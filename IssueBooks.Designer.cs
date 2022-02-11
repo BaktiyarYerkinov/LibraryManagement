@@ -80,7 +80,7 @@ namespace LibraryManagement
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(385, 396);
+            this.dataGridView1.Size = new System.Drawing.Size(385, 375);
             this.dataGridView1.TabIndex = 10;
             // 
             // panel1
@@ -250,7 +250,7 @@ namespace LibraryManagement
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(404, 149);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(611, 480);
+            this.panel3.Size = new System.Drawing.Size(616, 480);
             this.panel3.TabIndex = 18;
             // 
             // btnIssueBook
@@ -258,7 +258,7 @@ namespace LibraryManagement
             this.btnIssueBook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnIssueBook.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnIssueBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnIssueBook.Location = new System.Drawing.Point(371, 404);
+            this.btnIssueBook.Location = new System.Drawing.Point(376, 404);
             this.btnIssueBook.Name = "btnIssueBook";
             this.btnIssueBook.Size = new System.Drawing.Size(140, 35);
             this.btnIssueBook.TabIndex = 14;
@@ -273,7 +273,7 @@ namespace LibraryManagement
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker.Location = new System.Drawing.Point(267, 365);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(220, 22);
+            this.dateTimePicker.Size = new System.Drawing.Size(225, 22);
             this.dateTimePicker.TabIndex = 13;
             // 
             // comboBoxBooks
@@ -286,7 +286,7 @@ namespace LibraryManagement
             this.comboBoxBooks.FormattingEnabled = true;
             this.comboBoxBooks.Location = new System.Drawing.Point(267, 310);
             this.comboBoxBooks.Name = "comboBoxBooks";
-            this.comboBoxBooks.Size = new System.Drawing.Size(220, 28);
+            this.comboBoxBooks.Size = new System.Drawing.Size(225, 28);
             this.comboBoxBooks.TabIndex = 12;
             // 
             // txtEmail
@@ -298,7 +298,7 @@ namespace LibraryManagement
             this.txtEmail.Location = new System.Drawing.Point(267, 252);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.ReadOnly = true;
-            this.txtEmail.Size = new System.Drawing.Size(220, 27);
+            this.txtEmail.Size = new System.Drawing.Size(225, 27);
             this.txtEmail.TabIndex = 11;
             // 
             // txtContact
@@ -310,7 +310,7 @@ namespace LibraryManagement
             this.txtContact.Location = new System.Drawing.Point(267, 202);
             this.txtContact.Name = "txtContact";
             this.txtContact.ReadOnly = true;
-            this.txtContact.Size = new System.Drawing.Size(220, 27);
+            this.txtContact.Size = new System.Drawing.Size(225, 27);
             this.txtContact.TabIndex = 10;
             // 
             // txtSem
@@ -322,7 +322,7 @@ namespace LibraryManagement
             this.txtSem.Location = new System.Drawing.Point(267, 160);
             this.txtSem.Name = "txtSem";
             this.txtSem.ReadOnly = true;
-            this.txtSem.Size = new System.Drawing.Size(220, 27);
+            this.txtSem.Size = new System.Drawing.Size(225, 27);
             this.txtSem.TabIndex = 9;
             // 
             // txtDep
@@ -334,7 +334,7 @@ namespace LibraryManagement
             this.txtDep.Location = new System.Drawing.Point(267, 110);
             this.txtDep.Name = "txtDep";
             this.txtDep.ReadOnly = true;
-            this.txtDep.Size = new System.Drawing.Size(220, 27);
+            this.txtDep.Size = new System.Drawing.Size(225, 27);
             this.txtDep.TabIndex = 8;
             // 
             // txtName
@@ -346,7 +346,7 @@ namespace LibraryManagement
             this.txtName.Location = new System.Drawing.Point(267, 58);
             this.txtName.Name = "txtName";
             this.txtName.ReadOnly = true;
-            this.txtName.Size = new System.Drawing.Size(220, 27);
+            this.txtName.Size = new System.Drawing.Size(225, 27);
             this.txtName.TabIndex = 7;
             // 
             // label12
@@ -355,7 +355,7 @@ namespace LibraryManagement
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(152, 460);
+            this.label12.Location = new System.Drawing.Point(157, 460);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(390, 20);
             this.label12.TabIndex = 6;
